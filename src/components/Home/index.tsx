@@ -9,6 +9,7 @@ import {
 } from "@mui/material";
 import { FC } from "react";
 import "./Home.css";
+import { Link } from "react-router-dom";
 
 export const Home: FC = () => {
   return (
@@ -41,7 +42,12 @@ export const Home: FC = () => {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button href="/categories" variant="contained">
+              <Button
+                component={Link}
+                to="/categories"
+                variant="contained"
+                className="card-button"
+              >
                 <Typography>Go to</Typography>
               </Button>
             </CardActions>
@@ -66,7 +72,12 @@ export const Home: FC = () => {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button href="/upload-receipt" variant="contained">
+              <Button
+                component={Link}
+                to="/upload-receipt"
+                variant="contained"
+                className="card-button"
+              >
                 <Typography>Go to</Typography>
               </Button>
             </CardActions>
@@ -87,7 +98,12 @@ export const Home: FC = () => {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button href="/statistics" variant="contained">
+              <Button
+                component={Link}
+                to="/statistics"
+                variant="contained"
+                className="card-button"
+              >
                 <Typography>Go to</Typography>
               </Button>
             </CardActions>
