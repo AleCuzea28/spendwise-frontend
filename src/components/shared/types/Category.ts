@@ -1,4 +1,4 @@
-export type CategoryModel = {
+export type Category = {
   id?: number;
   name: string;
 };
